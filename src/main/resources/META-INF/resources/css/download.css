@@ -63,3 +63,13 @@ body {
 .accent-purple { 
     color: #a020f0; 
 }
+.navbar {
+    position: relative;
+}
+
+.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; /* 메뉴 줄바꿈 방지 */
+}

@@ -6,73 +6,63 @@
     <title>League of Legends - 메인 페이지</title>
     <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/test.js"></script>
+    <!-- <script src="js/test.js"></script> -->
     <script>
         window.onload = function() {
         alert("메인 페이지 로딩 완료");
         }
     </script>
     <!-- 커스텀 스타일 (LOL 테마 + 챔피언 호버 효과) -->
-    <style>
-        body { background-color: #0a0e17; color: #fff; font-family: 'Arial', sans-serif; }
-        .navbar { background-color: #000; }
-        .hero { background: linear-gradient(to bottom, #1e1e1e, #0a0e17); min-height: 60vh; }
-        .accent-purple { color: #a020f0; }
-        .accent-red { color: #ff0000; }
-        .card { background-color: #1e1e1e; border: none; transition: transform 0.3s, box-shadow 0.3s; }
-        .card:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(160, 32, 240, 0.5); }
-        .card-img-top { height: 200px; object-fit: cover; border-radius: 10px 10px 0 0; }
-        .btn-primary { background-color: #a020f0; border: none; }
-        .btn-primary:hover { background-color: #800080; }
-    </style>
+
 </head>
 <body>
 
     <!-- 헤더 (Navbar) -->
 <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-<div class="container-fluid">
-  <a class="navbar-brand" href="#">
-    <img src="images/lollogo.png" alt="League of Legends" width="110" height="50">
-  </a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">뉴스</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">챔피언</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="main_page_sub/download.html">다운로드</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="#">로그인</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          외부웹사이트
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="images/lollogo.png" alt="League of Legends" width="110" height="50">
         </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="https://www.leagueoflegends.com/ko-kr">lol공식웹사이트</a></li>
-          <li><a class="dropdown-item" href="#">E sports</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">알아보기</a></li>
-        </ul>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
-    <form class="d-flex" role="search" id="searchForm">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput" />
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
-  </div>
-</div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">뉴스</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">챔피언</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="main_page_sub/download.html">다운로드</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">로그인</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    외부웹사이트
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://www.leagueoflegends.com/ko-kr">lol공식웹사이트</a></li>
+                        <li><a class="dropdown-item" href="#">E sports</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">알아보기</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search" id="searchForm">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
 </nav>
 
     <!-- 히어로 배너 (Hero Banner) -->
@@ -88,15 +78,15 @@
     <section class="container my-5">
         <h2 class="text-center mb-4 accent-purple">챔피언 선택</h2>
         <p class="text-center mb-5">전투에 뛰어들기, 팀 지원, 또는 그 중간? 당신의 스타일을 선택하세요.</p>
-        <div class="row g-4">
+        <div class="row row-cols-auto g-4">
             
             <!--Aatrox-->
         <div class="col-md-6 col-lg-4 col-xl-2">
-                <div class="card bg-dark text-pupple border-secondary h-100">
+                <div class="card bg-dark tex-center text-purple border-secondary h-100">
                     <img src="images/Aatrox.jpg" class="card-img-top" alt="아트록스">
                     <div class="card-body">
-                        <h5 class="card-title accent-purple">Aatrox (탑)</h5>
-                        <p class="card-text">궁극기를 훔치세요!</p>
+                        <h5 class="card-title accent-purple text-center">Aatrox (탑)</h5>
+                        <p class="card-text text-center">궁극기를 훔치세요!</p>
                     </div>
                     <div class="card-footer bg-transparent border-0">
                         <button class="btn btn-outline-light w-100"
@@ -114,6 +104,12 @@
                         <h5 class="card-title accent-purple">Sylas (정글/미드)</h5>
                         <p class="card-text">궁극기를 훔치세요!</p>
                     </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <button class="btn btn-outline-light w-100"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalAatrox"
+                            data-champ="Aatrox">상세보기</button>
+                    </div>
                 </div>
             </div>
             <!-- Anivia -->
@@ -123,6 +119,12 @@
                     <div class="card-body">
                         <h5 class="card-title accent-red">Anivia (미드)</h5>
                         <p class="card-text">얼음으로 적을 봉인하세요.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <button class="btn btn-outline-light w-100"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalAatrox"
+                            data-champ="Aatrox">상세보기</button>
                     </div>
                 </div>
             </div>
@@ -134,6 +136,12 @@
                         <h5 class="card-title accent-purple">Briar (정글)</h5>
                         <p class="card-text">광폭한 힘으로 돌진!</p>
                     </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <button class="btn btn-outline-light w-100"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalAatrox"
+                            data-champ="Aatrox">상세보기</button>
+                    </div>
                 </div>
             </div>
             <!-- Jax -->
@@ -143,6 +151,12 @@
                     <div class="card-body">
                         <h5 class="card-title accent-red">Jax (탑)</h5>
                         <p class="card-text">대장간의 주인!</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <button class="btn btn-outline-light w-100"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalAatrox"
+                            data-champ="Aatrox">상세보기</button>
                     </div>
                 </div>
             </div>
@@ -154,13 +168,51 @@
                         <h5 class="card-title accent-purple">Jinx (원딜)</h5>
                         <p class="card-text">폭발로 적을 날려버리세요.</p>
                     </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <button class="btn btn-outline-light w-100"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalAatrox"
+                            data-champ="Aatrox">상세보기</button>
+                    </div>
+                </div>
+            </div>
+            <!--Jhin-->
+             <div class="col-md-6 col-lg-4 col-xl-2">
+                <div class="card text-center h-100">
+                    <img src="images/jhin.jpg" class="card-img-top" alt="Gnar" loading="lazy">
+                    <div class="card-body">
+                        <h5 class="card-title accent-purple">Jhin (원딜)</h5>
+                        <p class="card-text">폭발로 적을 날려버리세요.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <button class="btn btn-outline-light w-100"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalAatrox"
+                            data-champ="Aatrox">상세보기</button>
+                    </div>
+                </div>
+            </div>
+            <!--Gnar-->
+            <div class="col-md-6 col-lg-4 col-xl-2">
+                <div class="card text-center h-100">
+                    <img src="images/gnar.jpg" class="card-img-top" alt="Gnar" loading="lazy">
+                    <div class="card-body">
+                        <h5 class="card-title accent-purple">Gnar (탑)</h5>
+                        <p class="card-text">폭발로 적을 날려버리세요.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <button class="btn btn-outline-light w-100"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalAatrox"
+                            data-champ="Aatrox">상세보기</button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- 뉴스 섹션 (기존 유지) -->
-    <section class="container my-5">
+    <section class="container my-5 news-section">
         <h2 class="text-center mb-4 accent-red">최신 뉴스</h2>
         <div class="row g-4">
             <div class="col-md-6 col-lg-4">
@@ -183,27 +235,66 @@
             </div>
         </div>
     </section>
+    
+    <!-- ===== 검색 결과 섹션 (기본 숨김) ===== -->
+    <section id="searchResults">
+        <!-- 키워드 헤더 -->
+        <div class="search-keyword-header">
+            <h1 id="searchKeywordDisplay"></h1>
+        </div>
+        <!-- 본문: 사이드바 + 콘텐츠 -->
+        <div class="search-body">
+            <div class="container-fluid px-0">
+                <div class="row g-0">
+            <!-- 왼쪽 카테고리 사이드바 -->
+            <div class="col-md-3 col-lg-2 search-sidebar bg-white py-4">
+                <div class="px-3 mb-3" style="font-size:0.8rem; color:#999; text-transform:uppercase; letter-spacing:0.1em;">카테고리</div>
+                    <div class="search-category-item active" onclick="switchCategory('champion', this)">
+                    챔피언 <span class="count" id="champCount">(0)</span>
+                    </div>
+                    <div class="search-category-item" onclick="switchCategory('news', this)">
+                        뉴스 <span class="count" id="newsCount">(0)</span>
+                    </div>
+                </div>
+                    <!-- 오른쪽 콘텐츠 -->
+                    <div class="col-md-9 col-lg-10 search-content-area">
+                    <!-- 챔피언 결과 -->
+                    <div id="resultChampion">
+                        <h5 class="mb-4" style="color:#333;">챔피언</h5>
+                        <div id="championResultList"></div>
+                    </div>
+                    <!-- 뉴스 결과 -->
+                    <div id="resultNews" style="display:none;">
+                        <h5 class="mb-4" style="color:#333;">뉴스</h5>
+                    <div id="newsResultList"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
     <!-- 모달 (iframe으로 Aatrox.html 불러오기) -->
     <div class="modal fade" id="modalAatrox" tabindex="-1" aria-labelledby="modalAatroxLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content bg-dark text-white border-secondary">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-dark text-white border-secondary">
     <!-- 헤더-->
-    <div class="modal-header border-secondary">
-        <h5 class="modal-title" id="modalAatroxLabel">아트록스 (Aatrox) 상세 정보</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
+        <div class="modal-header border-secondary">
+            <h5 class="modal-title" id="modalAatroxLabel">아트록스 (Aatrox) 상세 정보</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
     <!-- 바디: iframe으로 내용 채움-->
-    <div class="modal-body p-0" style="height: 65vh; background: #0a0e17;">
-        <iframe src="modals/Aatrox.html"
-            frameborder="0"
-            style="width: 100%; height: 100%; border: none;"
-            allowfullscreen>
-        </iframe>
-    </div>
+        <div class="modal-body p-0" style="height: 65vh; background: #0a0e17;">
+            <iframe src="modals/Aatrox.html"
+                frameborder="0"
+                style="width: 100%; height: 100%; border: none;"
+                allowfullscreen>
+            </iframe>
+        </div>
     <!-- 푸터-->
-    <div class="modal-footer border-secondary">
-        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">닫기</button>
-    </div>
+        <div class="modal-footer border-secondary">
+            <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">닫기</button>
+        </div>
     </div>
 </div>
 </div>
