@@ -12,6 +12,9 @@ const CHAMPIONS = [
     { name: '브라이어', engName: 'Briar', role: '전사', lane: '정글', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Briar.png', difficulty: '중' },
     { name: '잭스', engName: 'Jax', role: '전사', lane: '탑', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Jax.png', difficulty: '하' },
     { name: '징크스', engName: 'Jinx', role: '원거리딜러', lane: '원딜', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Jinx.png', difficulty: '중' },
+    { name: '진', engName: 'Jhin', role: '원거리딜러', lane: '원딜', img: 'images/jhin.jpg', difficulty: '중' },
+    { name: '나르', engName: 'Gnar', role: '전사', lane: '탑', img: 'images/gnar.jpg', difficulty: '상' },
+    { name: '그웬', engName: 'Gwen', role: '전사', lane: '탑', img: 'images/gwen.jpg', difficulty: '중' },
 ];
 // ── 뉴스 데이터 ──────────────────────────────────────────────
 const NEWS = [
@@ -21,7 +24,10 @@ const NEWS = [
 // ── 검색 실행 ────────────────────────────────────────────────
 function performSearch(query) {
 const q = query.trim().toLowerCase(); // 앞 뒤 공백제거, 소문자 변환
-if (!q) return;
+if (!q) {
+    showMainScreen();
+    return;
+}
     document.getElementById('searchKeywordDisplay').textContent = `"${query}"`; // 검색어 인식
 // 챔피온 데이터에서 이름, 영문명, 역할군, 라인 중 하나라도 검색어에 포함되면
 const champResults = CHAMPIONS.filter(c =>

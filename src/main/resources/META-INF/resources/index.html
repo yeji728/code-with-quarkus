@@ -86,7 +86,7 @@
                     <img src="images/Aatrox.jpg" class="card-img-top" alt="아트록스">
                     <div class="card-body">
                         <h5 class="card-title accent-purple text-center">Aatrox (탑)</h5>
-                        <p class="card-text text-center">궁극기를 훔치세요!</p>
+                        <p class="card-text text-center">다르킨의 힘으로 적을 베어버리세요.</p>
                     </div>
                     <div class="card-footer bg-transparent border-0">
                         <button class="btn btn-outline-light w-100"
@@ -107,8 +107,8 @@
                     <div class="card-footer bg-transparent border-0">
                         <button class="btn btn-outline-light w-100"
                             data-bs-toggle="modal"
-                            data-bs-target="#modalAatrox"
-                            data-champ="Aatrox">상세보기</button>
+                            data-bs-target="#modalSylas"
+                            data-champ="Sylas">상세보기</button>
                     </div>
                 </div>
             </div>
@@ -123,8 +123,8 @@
                     <div class="card-footer bg-transparent border-0">
                         <button class="btn btn-outline-light w-100"
                             data-bs-toggle="modal"
-                            data-bs-target="#modalAatrox"
-                            data-champ="Aatrox">상세보기</button>
+                            data-bs-target="#modalAnivia"
+                            data-champ="Anivia">상세보기</button>
                     </div>
                 </div>
             </div>
@@ -139,8 +139,8 @@
                     <div class="card-footer bg-transparent border-0">
                         <button class="btn btn-outline-light w-100"
                             data-bs-toggle="modal"
-                            data-bs-target="#modalAatrox"
-                            data-champ="Aatrox">상세보기</button>
+                            data-bs-target="#modalBriar"
+                            data-champ="Briar">상세보기</button>
                     </div>
                 </div>
             </div>
@@ -155,8 +155,8 @@
                     <div class="card-footer bg-transparent border-0">
                         <button class="btn btn-outline-light w-100"
                             data-bs-toggle="modal"
-                            data-bs-target="#modalAatrox"
-                            data-champ="Aatrox">상세보기</button>
+                            data-bs-target="#modalJax"
+                            data-champ="Jax">상세보기</button>
                     </div>
                 </div>
             </div>
@@ -171,24 +171,24 @@
                     <div class="card-footer bg-transparent border-0">
                         <button class="btn btn-outline-light w-100"
                             data-bs-toggle="modal"
-                            data-bs-target="#modalAatrox"
-                            data-champ="Aatrox">상세보기</button>
+                            data-bs-target="#modalJinx"
+                            data-champ="Jinx">상세보기</button>
                     </div>
                 </div>
             </div>
             <!--Jhin-->
              <div class="col-md-6 col-lg-4 col-xl-2">
                 <div class="card text-center h-100">
-                    <img src="images/jhin.jpg" class="card-img-top" alt="Gnar" loading="lazy">
+                    <img src="images/jhin.jpg" class="card-img-top" alt="Jhin" loading="lazy">
                     <div class="card-body">
                         <h5 class="card-title accent-purple">Jhin (원딜)</h5>
-                        <p class="card-text">폭발로 적을 날려버리세요.</p>
+                        <p class="card-text">치밀한 저격으로 적을 처치하세요.</p>
                     </div>
                     <div class="card-footer bg-transparent border-0">
                         <button class="btn btn-outline-light w-100"
                             data-bs-toggle="modal"
-                            data-bs-target="#modalAatrox"
-                            data-champ="Aatrox">상세보기</button>
+                            data-bs-target="#modalJhin"
+                            data-champ="Jhin">상세보기</button>
                     </div>
                 </div>
             </div>
@@ -198,13 +198,29 @@
                     <img src="images/gnar.jpg" class="card-img-top" alt="Gnar" loading="lazy">
                     <div class="card-body">
                         <h5 class="card-title accent-purple">Gnar (탑)</h5>
-                        <p class="card-text">폭발로 적을 날려버리세요.</p>
+                        <p class="card-text">분노를 폭발시켜 적을 날려버리세요!</p>
                     </div>
                     <div class="card-footer bg-transparent border-0">
                         <button class="btn btn-outline-light w-100"
                             data-bs-toggle="modal"
-                            data-bs-target="#modalAatrox"
-                            data-champ="Aatrox">상세보기</button>
+                            data-bs-target="#modalGnar"
+                            data-champ="Gnar">상세보기</button>
+                    </div>
+                </div>
+            </div>
+            <!--Gwen-->
+             <div class="col-md-6 col-lg-4 col-xl-2">
+                <div class="card text-center h-100">
+                    <img src="images/gwen.jpg" class="card-img-top" alt="Gnar" loading="lazy">
+                    <div class="card-body">
+                        <h5 class="card-title accent-purple">Gwen (탑)</h5>
+                        <p class="card-text">날카로운 가위로 적을 베어버리세요.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <button class="btn btn-outline-light w-100"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalGwen"
+                            data-champ="Gwen">상세보기</button>
                     </div>
                 </div>
             </div>
@@ -298,6 +314,209 @@
     </div>
 </div>
 </div>
+
+ <!-- 모달 (iframe으로 Sylas.html 불러오기) -->
+    <div class="modal fade" id="modalSylas" tabindex="-1" aria-labelledby="modalSylasLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-dark text-white border-secondary">
+    <!-- 헤더-->
+        <div class="modal-header border-secondary">
+            <h5 class="modal-title" id="modalSylasLabel">슬라스 (Sylas) 상세 정보</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+    <!-- 바디: iframe으로 내용 채움-->
+        <div class="modal-body p-0" style="height: 65vh; background: #0a0e17;">
+            <iframe src="modals/Sylas.html"
+                frameborder="0"
+                style="width: 100%; height: 100%; border: none;"
+                allowfullscreen>
+            </iframe>
+        </div>
+    <!-- 푸터-->
+        <div class="modal-footer border-secondary">
+            <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">닫기</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- 모달 (iframe으로 Anivia.html 불러오기) -->
+    <div class="modal fade" id="modalAnivia" tabindex="-1" aria-labelledby="modalAniviaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-dark text-white border-secondary">
+        <!-- 헤더-->
+            <div class="modal-header border-secondary">
+                <h5 class="modal-title" id="modalAniviaLabel">앤비아 (Anivia) 상세 정보</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        <!-- 바디: iframe으로 내용 채움-->
+            <div class="modal-body p-0" style="height: 65vh; background: #0a0e17;">
+                <iframe src="modals/Anivia.html"
+                    frameborder="0"
+                    style="width: 100%; height: 100%; border: none;"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        <!-- 푸터-->
+            <div class="modal-footer border-secondary">
+                <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">닫기</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 모달 (iframe으로 Briar.html 불러오기) -->
+    <div class="modal fade" id="modalBriar" tabindex="-1" aria-labelledby="modalBriarLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-dark text-white border-secondary">
+        <!-- 헤더-->
+            <div class="modal-header border-secondary">
+                <h5 class="modal-title" id="modalBriarLabel">브라이어 (Briar) 상세 정보</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        <!-- 바디: iframe으로 내용 채움-->
+            <div class="modal-body p-0" style="height: 65vh; background: #0a0e17;">
+                <iframe src="modals/Briar.html"
+                    frameborder="0"
+                    style="width: 100%; height: 100%; border: none;"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        <!-- 푸터-->
+            <div class="modal-footer border-secondary">
+                <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">닫기</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- 모달 (iframe으로 Jax.html 불러오기) -->
+    <div class="modal fade" id="modalJax" tabindex="-1" aria-labelledby="modalJaxLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-dark text-white border-secondary">
+        <!-- 헤더-->
+            <div class="modal-header border-secondary">
+                <h5 class="modal-title" id="modalJaxLabel">잭스 (Jax) 상세 정보</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        <!-- 바디: iframe으로 내용 채움-->
+            <div class="modal-body p-0" style="height: 65vh; background: #0a0e17;">
+                <iframe src="modals/Jax.html"
+                    frameborder="0"
+                    style="width: 100%; height: 100%; border: none;"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        <!-- 푸터-->
+            <div class="modal-footer border-secondary">
+                <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">닫기</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+   <!-- 모달 (iframe으로 Jinx.html 불러오기) -->
+    <div class="modal fade" id="modalJinx" tabindex="-1" aria-labelledby="modalJinxLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-dark text-white border-secondary">
+        <!-- 헤더-->
+            <div class="modal-header border-secondary">
+                <h5 class="modal-title" id="modalJinxLabel">징크스 (Jinx) 상세 정보</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        <!-- 바디: iframe으로 내용 채움-->
+            <div class="modal-body p-0" style="height: 65vh; background: #0a0e17;">
+                <iframe src="modals/Jinx.html"
+                    frameborder="0"
+                    style="width: 100%; height: 100%; border: none;"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        <!-- 푸터-->
+            <div class="modal-footer border-secondary">
+                <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">닫기</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- 모달 (iframe으로 Jhin.html 불러오기) -->
+    <div class="modal fade" id="modalJhin" tabindex="-1" aria-labelledby="modalJhinLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-dark text-white border-secondary">
+        <!-- 헤더-->
+            <div class="modal-header border-secondary">
+                <h5 class="modal-title" id="modalJhinLabel">진 (Jhin) 상세 정보</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        <!-- 바디: iframe으로 내용 채움-->
+            <div class="modal-body p-0" style="height: 65vh; background: #0a0e17;">
+                <iframe src="modals/Jhin.html"
+                    frameborder="0"
+                    style="width: 100%; height: 100%; border: none;"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        <!-- 푸터-->
+            <div class="modal-footer border-secondary">
+                <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">닫기</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- 모달 (iframe으로 Gnar.html 불러오기) -->
+    <div class="modal fade" id="modalGnar" tabindex="-1" aria-labelledby="modalGnarLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-dark text-white border-secondary">
+        <!-- 헤더-->
+            <div class="modal-header border-secondary">
+                <h5 class="modal-title" id="modalGnarLabel">나르 (Gnar) 상세 정보</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        <!-- 바디: iframe으로 내용 채움-->
+            <div class="modal-body p-0" style="height: 65vh; background: #0a0e17;">
+                <iframe src="modals/Gnar.html"
+                    frameborder="0"
+                    style="width: 100%; height: 100%; border: none;"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        <!-- 푸터-->
+            <div class="modal-footer border-secondary">
+                <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">닫기</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 모달 (iframe으로 Gwen.html 불러오기) -->
+    <div class="modal fade" id="modalGwen" tabindex="-1" aria-labelledby="modalGwenLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-dark text-white border-secondary">
+        <!-- 헤더-->
+            <div class="modal-header border-secondary">
+                <h5 class="modal-title" id="modalGwenLabel">그웬 (Gwen) 상세 정보</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        <!-- 바디: iframe으로 내용 채움-->
+            <div class="modal-body p-0" style="height: 65vh; background: #0a0e17;">
+                <iframe src="modals/Gwen.html"
+                    frameborder="0"
+                    style="width: 100%; height: 100%; border: none;"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        <!-- 푸터-->
+            <div class="modal-footer border-secondary">
+                <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">닫기</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <script src="js/search.js"></script>
 </body>
 </html>
