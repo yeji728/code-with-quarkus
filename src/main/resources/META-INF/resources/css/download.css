@@ -73,3 +73,26 @@ body {
     transform: translateX(-50%);
     white-space: nowrap; /* 메뉴 줄바꿈 방지 */
 }
+
+body.light-mode {
+    background-color: #dfe3ea;
+    color: #111;
+}
+
+/* 라이트 모드 카드 */
+body.light-mode .card {
+    background-color: #dfdbdb;
+    color: black;
+}
+
+
+body.light-mode .hero {
+    background:
+        linear-gradient(rgba(255,255,255,0.45), rgba(255,255,255,0.55)),
+        url('../images/leagueoflegends.jpg') center/cover no-repeat;
+}
+
+body.light-mode {
+    background-color: #dfe3ea;
+    color: #111;
+}
