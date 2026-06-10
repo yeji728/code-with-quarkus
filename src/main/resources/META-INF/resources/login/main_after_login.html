@@ -7,14 +7,14 @@
     <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/test2.js"></script>
-    <script src="js/test.js"></script>
-    <script src="js/toggle.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/test2.js"></script>
+    <script src="../js/test.js"></script>
+    <script src="../js/toggle.js"></script>
     <!-- <script src="js/test.js"></script> -->
     <script>
         window.onload = function() {
-            showToast('메인 페이지 로딩 완료');
+            showToast('로그인 완료!');
         }
     </script>
     <!-- 커스텀 스타일 (LOL 테마 + 챔피언 호버 효과) -->
@@ -25,7 +25,7 @@
     <!-- 헤더 (Navbar) -->
 <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">
+        <a class="navbar-brand" href="../main_index.html">
             <img src="images/lollogo.png" alt="League of Legends" width="110" height="50">
         </a>
         <!-- [변경] "Navbar" 텍스트 → 다크/라이트 토글 버튼 -->
@@ -61,13 +61,10 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="https://www.leagueoflegends.com/ko-kr">lol공식웹사이트</a></li>
-                        <li><a class="dropdown-item" href="#">E sports</a></li>
+                        <li><a class="dropdown-item" href="https://lolesports.com/ko-KR/">E sports</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">알아보기</a></li>
                     </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                 </li>
             </ul>
             <form class="d-flex" role="search" id="searchForm">
@@ -96,7 +93,7 @@
             <!--Aatrox-->
         <div class="col-md-6 col-lg-4 col-xl-2">
                 <div class="card text-center text-purple h-100">
-                    <img src="images/Aatrox.jpg" class="card-img-top" alt="아트록스">
+                    <img src="../images/Aatrox.jpg" class="card-img-top" alt="아트록스">
                     <div class="card-body">
                         <h5 class="card-title accent-purple text-center">Aatrox (탑)</h5>
                         <p class="card-text text-center">다르킨의 힘으로 적을 베어버리세요.</p>
@@ -112,7 +109,7 @@
             <!-- Sylas -->
             <div class="col-md-6 col-lg-4 col-xl-2">
                 <div class="card text-center h-100">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Sylas.png" class="card-img-top" alt="Sylas" loading="lazy">
+                    <img src="../images/sylas.jpg" class="card-img-top" alt="Sylas" loading="lazy">
                     <div class="card-body">
                         <h5 class="card-title accent-purple">Sylas (정글/미드)</h5>
                         <p class="card-text">궁극기를 훔치세요!</p>
@@ -128,7 +125,7 @@
             <!-- Anivia -->
             <div class="col-md-6 col-lg-4 col-xl-2">
                 <div class="card text-center h-100">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Anivia.png" class="card-img-top" alt="Anivia" loading="lazy">
+                    <img src="../images/anivia.jpg" class="card-img-top" alt="Anivia" loading="lazy">
                     <div class="card-body">
                         <h5 class="card-title accent-red">Anivia (미드)</h5>
                         <p class="card-text">얼음으로 적을 봉인하세요.</p>
@@ -144,7 +141,7 @@
             <!-- Briar -->
             <div class="col-md-6 col-lg-4 col-xl-2">
                 <div class="card text-center h-100">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Briar.png" class="card-img-top" alt="Briar" loading="lazy">
+                    <img src="../images/briar.jpg" class="card-img-top" alt="Briar" loading="lazy">
                     <div class="card-body">
                         <h5 class="card-title accent-purple">Briar (정글)</h5>
                         <p class="card-text">광폭한 힘으로 돌진!</p>
@@ -160,7 +157,7 @@
             <!-- Jax -->
             <div class="col-md-6 col-lg-4 col-xl-2">
                 <div class="card text-center h-100">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Jax.png" class="card-img-top" alt="Jax" loading="lazy">
+                    <img src="../images/jax.png" class="card-img-top" alt="Jax" loading="lazy">
                     <div class="card-body">
                         <h5 class="card-title accent-red">Jax (탑)</h5>
                         <p class="card-text">대장간의 주인!</p>
@@ -176,7 +173,7 @@
             <!-- Jinx -->
             <div class="col-md-6 col-lg-4 col-xl-2">
                 <div class="card text-center h-100">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Jinx.png" class="card-img-top" alt="Jinx" loading="lazy">
+                    <img src="../images/jinx.jpg" class="card-img-top" alt="Jinx" loading="lazy">
                     <div class="card-body">
                         <h5 class="card-title accent-purple">Jinx (원딜)</h5>
                         <p class="card-text">폭발로 적을 날려버리세요.</p>
@@ -192,7 +189,7 @@
             <!--Jhin-->
              <div class="col-md-6 col-lg-4 col-xl-2">
                 <div class="card text-center h-100">
-                    <img src="images/jhin.jpg" class="card-img-top" alt="Jhin" loading="lazy">
+                    <img src="../images/jhin.jpg" class="card-img-top" alt="Jhin" loading="lazy">
                     <div class="card-body">
                         <h5 class="card-title accent-purple">Jhin (원딜)</h5>
                         <p class="card-text">치밀한 저격으로 적을 처치하세요.</p>
@@ -208,7 +205,7 @@
             <!--Gnar-->
             <div class="col-md-6 col-lg-4 col-xl-2">
                 <div class="card text-center h-100">
-                    <img src="images/gnar.jpg" class="card-img-top" alt="Gnar" loading="lazy">
+                    <img src="../images/gnar.jpg" class="card-img-top" alt="Gnar" loading="lazy">
                     <div class="card-body">
                         <h5 class="card-title accent-purple">Gnar (탑)</h5>
                         <p class="card-text">분노를 폭발시켜 적을 날려버리세요!</p>
@@ -224,7 +221,7 @@
             <!--Gwen-->
              <div class="col-md-6 col-lg-4 col-xl-2">
                 <div class="card text-center h-100">
-                    <img src="images/gwen.jpg" class="card-img-top" alt="Gnar" loading="lazy">
+                    <img src="../images/gwen.jpg" class="card-img-top" alt="Gnar" loading="lazy">
                     <div class="card-body">
                         <h5 class="card-title accent-purple">Gwen (탑)</h5>
                         <p class="card-text">날카로운 가위로 적을 베어버리세요.</p>
@@ -529,9 +526,23 @@
     </div>
 </div>
 
+  <div class="toast-container position-fixed
+        bottom-0 end-0 p-3" style="z-index:9999">
+        <div id="liveToast" class="toast align-items-center
+            text-white bg-success border-0" role="alert">
+            <div class="d-flex">
+                <div class="toast-body" id="toastBody">
+                    메시지
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto"
+                    data-bs-dismiss="toast"></button>
+            </div>
+        </div>
+    </div>
 
-<script src="js/search.js"></script>
-<script src="js/login.js"></script>
+
+<script src="../js/search.js"></script>
+<script src="../js/login.js"></script>
 <script src="../js/profile.js"></script>
 </body>
 </html>
